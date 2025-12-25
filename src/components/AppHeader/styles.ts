@@ -13,13 +13,16 @@ const styles = () => {
 		hdrContainer: {
 			...flexDisplay,
 			backgroundColor: '#777',
-			borderWidth: 2,
+			borderWidth: 3,
 			height: '30%',
             padding: 10,
+			borderColor: '#efad05',
 		},
         headerTitle: {
             color: '#EEE',
             fontSize: 20,
+			borderColor: '#05adef',
+			borderWidth: 3,
         },
 	});
 };

@@ -4,6 +4,10 @@ import { Text, View } from "react-native";
 import styles from "./styles";
 
 type React$Node = JSX.Element | null;
+// type compProps = {
+//     children: string,
+//     tintColor?: string | undefined
+// }
 
 const AppHeader: (props: NativeStackHeaderProps) => React$Node = (props) => {
 	const compStyles = styles();

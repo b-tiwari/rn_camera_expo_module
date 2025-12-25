@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:4:5-84
+	android:required
+		ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:4:58-81
+	android:name
+		ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:4:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml:5:22-62
+uses-sdk
+INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml
+INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/bharattiwari/working/react-native/RN-Practice-Small-Projects/rn_camera_expo_module/modules/app-native-camera/android/src/main/AndroidManifest.xml
