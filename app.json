@@ -9,7 +9,13 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iw2admin.rn-camera-expo-module",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "This app needs access to camera to capture photos and videos.",
+        "NSMicrophoneUsageDescription": "This app needs access to microphone to record audio with videos."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +25,8 @@
         "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.iw2admin.rn_camera_expo_module"
     },
     "web": {
       "output": "static",
@@ -43,6 +50,19 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "975f7645-fce5-4830-878b-34a056b89801"
+      }
+    },
+    "owner": "iw2admin",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/975f7645-fce5-4830-878b-34a056b89801"
     }
   }
 }

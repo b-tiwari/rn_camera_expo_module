@@ -1,6 +1,11 @@
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AppRootNavigation from './rootNavigation';
 
 
 export default function RootLayout() {
-  return <AppRootNavigation />;
+  return (
+    <SafeAreaProvider>
+      <AppRootNavigation />
+    </SafeAreaProvider>
+  );
 }
