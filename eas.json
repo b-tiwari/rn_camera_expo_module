@@ -1,0 +1,61 @@
+{
+  "cli": {
+    "version": ">= 16.28.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://dev.company.com/api"
+      },
+      "channel": "development",
+      "ios": {
+        "simulator": false
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://staging.company.com/api"
+      },
+      "channel": "preview",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview-device": {
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://staging.company.com/api"
+      },
+      "channel": "preview"
+    },
+    "internal": {
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://staging.company.com/api"
+      },
+      "channel": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "API_URL": "https://company.com/api"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "channel": "preview"
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./KeyOfServiceAccountToManageAppReleasesInPlayStore.json",
+        "track": "internal"
+      }
+    }
+  }
+}
