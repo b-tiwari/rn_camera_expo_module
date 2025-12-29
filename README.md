@@ -1,50 +1,146 @@
-# Welcome to your Expo app 👋
+# React Native Camera Expo Module
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native hobby project featuring a custom **native camera module**. 
 
-## Get started
+It implements a simple camera view using Expo's **(Native) Module API** that provides the camera functionality with native iOS (Swift) and Android (Kotlin/Java) implementations, wrapped in a React Native component.
 
-1. Install dependencies
 
+## Features
+
+- **Custom Native Camera Module**: Built using Expo Module API
+- **Cross-platform Support**: iOS and Android native implementations
+- **Camera Permissions**: Automatic handling of camera and microphone permissions
+- **Modern React Native**: Uses React Native 0.81.5 with Expo SDK 54
+- **TypeScript Support**: Fully typed codebase
+- **EAS Build Ready**: Configured for Expo Application Services (EAS) builds
+- **New Architecture Support**: Compatible with React Native's new architecture
+
+
+## Screenshots and videos
+(To-do)
++ [ ] Add screenshot of App's Camera view on iPhone
++ [ ] Add screenshot of App's Camera view on Android
+
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [repository-url]
+   cd rn_camera_expo_module
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Install iOS dependencies** (macOS only)
    ```bash
-   npx expo start
+   cd ios && pod install && cd ..
    ```
 
-In the output, you'll find options to open the app in a
+## Running the Project
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### Development Mode
 ```bash
-npm run reset-project
+# Start Expo development server
+npm start
+
+# Run on iOS simulator
+npm run ios
+
+# Run on Android emulator
+npm run android
+
+# Run on web
+npm run web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Production Builds
 
-## Learn more
+This project is configured with **Expo Application Services (EAS)** for production builds:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+# Install EAS CLI
+npm install -g @expo/eas-cli
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Login to EAS
+eas login
 
-## Join the community
+# Configure EAS (if not already done)
+eas build:configure
 
-Join our community of developers creating universal apps.
+# Build for iOS
+eas build --platform ios
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Build for Android
+eas build --platform android
+
+# Build for both platforms
+eas build --platform all
+```
+
+
+
+## Custom Native Module
+
+The `app-native-camera` module demonstrates:
+
+- **Expo Module Configuration**: Platform-specific module setup
+- **Native View Components**: Custom camera UI components
+- **TypeScript Integration**: Type-safe props and events
+- **Cross-platform Implementation**: Separate iOS (Swift) and Android implementations
+
+### Module Structure
+- `AppNativeCameraModule.ts`: Main module interface
+- `AppNativeCameraView.tsx`: React component wrapper
+- `AppNativeCamera.types.ts`: TypeScript definitions
+- `ios/`: Swift implementation for iOS
+- `android/`: Kotlin/Java implementation for Android
+
+
+
+## Development
+
+### Code Formatting
+The project uses ESLint for code linting:
+```bash
+npm run lint
+```
+
+### Prebuild
+To regenerate native code:
+```bash
+npm run prebuild
+```
+
+## Security
+
+- API keys and secrets are managed through EAS secrets
+- `app.json` contains the EAS project ID
+- Service account keys for Play Store deployment are stored securely
+
+## Build & Deployment
+
+### Android
+```bash
+# Create production build
+eas build --platform android --profile production
+
+# Submit to Play Store
+eas submit --platform android --profile production
+```
+
+### iOS
+```bash
+# Create production build
+eas build --platform ios --profile production
+
+# Submit to App Store
+eas submit --platform ios --profile production
+```
+
+---
+
+**Note**: This is a hobby project demonstrating the creation of custom native modules with Expo. For production camera functionality, consider using established libraries like `expo-camera` or `react-native-vision-camera`.

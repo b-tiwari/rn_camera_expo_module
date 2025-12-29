@@ -54,7 +54,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "975f7645-fce5-4830-878b-34a056b89801"
+        "projectId": "<<< add your EXPO EAS Project ID here >>>"
       }
     },
     "owner": "iw2admin",
